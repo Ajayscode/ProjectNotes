@@ -22,7 +22,7 @@ function App() {
     if (taskText.trim() === "") return;
 
     setprojects((prevProjects) => {
-      return prevProjects.map((project) => {
+      const updatedProjects = prevProjects.map((project) => {
         if (project.id === id) {
           return {
             ...project,
@@ -31,8 +31,11 @@ function App() {
         }
         return project;
       });
-    });
+      const updateSelected = updatedProjects.find((ele) => ele.id === id);
+      setselected(updateSelected);
 
+      return updatedProjects;
+    });
     textRef.current.value = "";
   }
   function getformstate(e) {
