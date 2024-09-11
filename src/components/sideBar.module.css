@@ -1,0 +1,54 @@
+.sidebar {
+  list-style-type: none;
+  width: 320px;
+  margin-left: 0px;
+  background-color: black;
+  color: rgb(215, 203, 191);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  height: 100vh;
+  border-radius: 0em 0.8em 0.2em 0.2em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.sidebar > li:nth-child(1) {
+  padding-top: 2em;
+}
+
+li h1 {
+  font-size: larger;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  margin-bottom: 2em;
+}
+
+.add {
+  width: 120px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: rgb(81, 75, 60);
+  position: relative;
+  right: 20px;
+}
+
+.add:hover {
+  color: rgb(81, 75, 60);
+  background-color: rgb(215, 203, 191);
+}
+
+.projects {
+  margin-top: 5em;
+}
+
+.projects ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

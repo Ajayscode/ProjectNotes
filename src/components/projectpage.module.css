@@ -1,0 +1,139 @@
+.project__con {
+  width: 95%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  background-color: rgba(248, 235, 217, 0.115);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 2px solid silver;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  gap: 3em;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.project_container {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: flex-start;
+  padding: 3em;
+  margin: 10px;
+  background-color: rgba(255, 252, 240, 0.201);
+  margin-top: 2em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4),
+    0px 0px 2px 2px rgba(150, 137, 25, 0.4) inset;
+  z-index: 2;
+  overflow-y: scroll;
+}
+
+.project_container h1 {
+  font-size: 82px;
+  position: relative;
+  text-transform: uppercase;
+  color: rgb(44, 43, 43);
+}
+
+.project_container h2 {
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+  font-size: 20px;
+  font-style: italic;
+  color: rgba(226, 149, 16, 0.622);
+}
+
+.title_container {
+  position: relative;
+  width: 100%;
+  border-bottom: 5px solid grey;
+}
+
+.date {
+  position: absolute;
+  left: 70%;
+  bottom: 80%;
+}
+
+.desc {
+  color: black;
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.hidescrollbar {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hidescrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.taskcontainer {
+  width: 90%;
+  padding-top: 20px;
+  border-radius: 10px;
+  height: 40%;
+  position: relative;
+}
+
+.addtask form {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  gap: 5em;
+  height: 100%;
+}
+
+.addtask h1 {
+  font-size: xx-large;
+  font-family: cursive;
+  font-weight: 900;
+  text-align: left;
+}
+
+.input__container {
+  top: 8px;
+  position: absolute;
+  display: flex;
+  right: 4px;
+  gap: 10px;
+}
+
+.input__container textarea {
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input__container button {
+  position: relative;
+  background-color: bisque;
+  border-radius: 9px;
+  padding: 6px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input__container button:hover {
+  background-color: black;
+  color: aliceblue;
+}
+
+.addtask ol {
+  position: relative;
+  top: 6em;
+  left: 6em;
+}
+.addtask {
+  z-index: 1;
+  margin-top: 20px;
+}
