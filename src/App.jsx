@@ -24,6 +24,12 @@ function App() {
     setprojects((prevProjects) => {
       const updatedProjects = prevProjects.map((project) => {
         if (project.id === id) {
+          const sametask = project.tasks.some((ele) => ele === taskText);
+          console.log(sametask);
+          if (sametask) {
+            setvalidation({ state: true, value: "Task already Exists." });
+            return project;
+          }
           return {
             ...project,
             tasks: [...project.tasks, taskText],
