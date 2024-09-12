@@ -1,5 +1,6 @@
 import classes from "./projectpage.module.css";
 import { forwardRef } from "react";
+import Toogle from "../layouts/toogle";
 
 const ProjectPage = forwardRef(function ProjectPage(
   { project, handletask },
@@ -31,6 +32,9 @@ const ProjectPage = forwardRef(function ProjectPage(
               return (
                 <li key={index}>
                   <p>{ele}</p>
+                  <div>
+                    <Toogle />
+                  </div>
                 </li>
               );
             })}

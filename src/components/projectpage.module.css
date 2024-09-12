@@ -137,3 +137,11 @@
   z-index: 1;
   margin-top: 20px;
 }
+.addtask ol > li {
+  display: flex;
+  position: relative;
+}
+li > div {
+  position: relative;
+  bottom: 3px;
+}
